@@ -58,12 +58,12 @@ const RESTAURANT = {
   
 
 app.get('/', (req, res) => {
-  res.render('Home', { restaurant: RESTAURANT});
+  res.render('home.ejs', { restaurant: RESTAURANT});
 });
 
 app.get('/menu', (req, res) => {
     console.log('Menu route accessed')
-    res.render('Menu', { restaurant: RESTAURANT});
+    res.render('menu.ejs', { restaurant: RESTAURANT});
 });
 
 app.listen(3000, () => {
